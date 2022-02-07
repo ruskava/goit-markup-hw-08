@@ -1,0 +1,76 @@
+.hero-btn {
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    color: var(--heder-color);
+    background-color: var(--alt-color);
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px var(--box-shadow);
+    padding: 10px 32px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover, &:focus{
+      background-color: var(--btn-focus-hover);
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    }
+  }
+  .btn-footer {
+    padding-top: 10px;
+    padding-left: 29px;
+    padding-right: 62px;
+    padding-bottom: 10px;
+    margin-top: 0px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    align-items: center;
+    text-align: center;
+  }
+  .modal-btn{
+    display: block;
+    text-align: center;
+    justify-content: center;
+    padding: 10px 55px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    transition:  box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .btm-list__filter-btm {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    letter-spacing: 0.03em;
+    border-radius: 4px;
+    padding: 6px 22px;
+    background: var(--background-team);
+    color: var(--maim-color);
+    cursor: pointer;
+    border: none;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      &:hover, &:focus
+       {background: var(--alt-color);
+        color: var(--heder-color);
+        box-shadow: var(--box-shadow-btm);
+      }
+    }
+    .btm-list__active{
+      background: var(--alt-color);
+       color: var(--heder-color);
+       &:hover, &:focus{
+       box-shadow: var(--box-shadow-btm);}
+     }
+    
+    .btm-list {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 34px;
+      width: 100%;
+    }
+    .btm-list__filter:not(:last-child) {
+      margin-right: 8px;
+    }

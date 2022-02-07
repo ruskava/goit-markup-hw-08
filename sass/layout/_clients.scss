@@ -1,0 +1,25 @@
+.clients{
+    --card-item: 6;
+  }
+  .clients-list__link {
+            border: 1px solid var(--fill-cocial);
+            border-radius: 4px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 16px 32px;
+            transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+            border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            &:hover, &:focus{
+            background-color: var(--heder-color);
+            border: 1px solid var(--alt-color);
+            }
+            &:hover .clients-list__icon,
+            &:focus .clients-list__icon{
+             fill: var(--alt-color);
+            }
+        }
+      .clients-list__icon {
+        fill: var(--fill-cocial);
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);}
+   

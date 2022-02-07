@@ -1,0 +1,29 @@
+.team {
+    background: var(--background-team);
+    --card-item: 4;
+  }
+  .team__title,
+  .team__position {
+    font-size: 16px;
+    line-height: 1.19;
+  }
+  .team__title {
+    font-weight: 500;
+    color: var(--maim-color);
+    margin-bottom: 10px;
+  }
+  .team-list__photo{
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .team__position {
+    margin-bottom: 16px;
+  }
+  .team-list__item {
+    border-radius: 0px 0px 4px 4px;
+    background-color: var(--heder-color);
+    padding-bottom: 30px;
+    text-align: center;
+    box-shadow: var(--box-shadow-team);
+  }
+  

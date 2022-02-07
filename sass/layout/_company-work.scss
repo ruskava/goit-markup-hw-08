@@ -1,0 +1,22 @@
+.engaged-list__item {
+    position: relative;
+    --card-item: 3;
+  }
+  .engaged-backdrop {
+    position: relative;
+  }
+  .engaged-list__text {
+    font-weight: 700;
+    line-height: 1.14;
+    text-align: center;
+    text-transform: uppercase;
+    position: absolute;
+    color: var(--heder-color);
+    background-color: var(--engaged-backdrop-span);
+    width: 100%;
+    min-height: 70px;
+    bottom: 0;
+    left: 0;
+    padding-top: 27px;
+    padding-bottom: 27px;
+  }

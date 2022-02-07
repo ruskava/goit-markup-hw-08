@@ -1,0 +1,24 @@
+.company {
+    padding-bottom: 0px;
+    --card-item: 4;
+  }
+   .company-lis__title {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.14;
+      text-transform: uppercase;
+      color: var(--maim-color);
+      margin-bottom: 10px;
+    }
+    .company-list__img {
+      height: 120px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 30px;
+      background-color: var(--background-team);
+    }
+    .company-list__icon {
+      display: flex;
+      justify-content: center;
+    }
