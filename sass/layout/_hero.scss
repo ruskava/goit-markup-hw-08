@@ -1,4 +1,8 @@
 .hero {
+  width: auto;
+  @media screen and (max-width: 1199px) {
+    padding-top: 118px;
+    padding-bottom: 118px;}
     padding-top: 200px;
     padding-bottom: 200px;
     text-align: center;
@@ -6,15 +10,59 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../img/hero-bg.jpg);
+      url(..//img/heder-mob-1x.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover, auto;
+    @media (min-device--picel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx){
+      background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../img/heder-mob-2x.jpg);
+    }
+    @media screen and (min-width: 768px) {
+      background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(..//img/heder-tab-1x.jpg);
+      @media (min-device--picel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx){
+        background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../img/heder-tab-2x.jpg);
+      }
+    }
+    @media screen and (min-width: 1200px) {
+      background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(..//../img/hero-bg.jpg);
+      @media (min-device--picel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx){
+        background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(..//../img/heder-desk-2x.jpg);
+      }
   }
   .hero-title {
     font-weight: 900;
+    @media screen and (max-width: 767px) {
+    font-size: 26px;
+    line-height: 1.61;}
+    @media screen and (min-width: 768px) {
     font-size: 44px;
-    line-height: 1.36;
+    line-height: 1.36;}
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
@@ -23,4 +71,4 @@
     margin: 0 auto;
     margin-bottom: 30px;
   }
- 
+}

@@ -7,7 +7,7 @@
     transition: opacity 500ms, visibility 500ms; 
   }
   .modal {
-    width: 528px;
+    width: 90vw;
     min-height: 581px;
     background-color: var(--heder-color);
     border-radius: 4px;
@@ -17,7 +17,12 @@
     transform: translate(-50%, -50%) scale(1);
     transition: transform 600ms;
     padding: 40px;
-  }
+    @media screen and (min-width: 480px){
+      width: 450px;}
+    @media screen and (min-width: 480px){
+    width: 528px;}
+}
+
   .backdrop.is-hidden .modal {
     transform: scale(0.5);
   }
@@ -82,6 +87,7 @@
     color: var(--description-color);
     display: flex;
     margin-bottom: 4px;
+    text-align: center;
   }
   .form-text {
     width: 100%;

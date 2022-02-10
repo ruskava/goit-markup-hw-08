@@ -69,8 +69,30 @@
       display: flex;
       justify-content: center;
       margin-bottom: 34px;
+      @media screen and (max-width: 480px) {
+      margin-bottom: 40px;}
       width: 100%;
     }
-    .btm-list__filter:not(:last-child) {
-      margin-right: 8px;
+    .btm-list__filter:not(:last-child) { 
+    margin-right: 8px;
+    @media screen and (max-width: 1200px) {
+      margin-right: 8px;}
+      @media screen and (max-width: 480px) {
+        margin-right: 8px;
+       
+    }
+  }
+    .btm-wrap{
+      @media screen and (min-width: 480px) {
+        --card-item: 3;}
+      @media screen and (min-width: 768px) {
+        --card-item: 5;}
+      @media screen and (min-width: 1200px) {
+        --card-item: 5;}
+      }
+      .btm-list__filter-btm{
+        @media screen and (max-width: 767px) {
+          display: flex;
+          margin-bottom: 15px;
+      }
     }
