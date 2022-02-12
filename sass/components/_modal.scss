@@ -1,143 +1,143 @@
 .backdrop {
-    position: fixed;
-    top: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: var(--backdrop);
-    transition: opacity 500ms, visibility 500ms; 
-  }
-  .modal {
-    width: 90vw;
-    min-height: 581px;
-    background-color: var(--heder-color);
-    border-radius: 4px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(1);
-    transition: transform 600ms;
-    padding: 40px;
-    @media screen and (min-width: 480px){
-      width: 450px;}
-    @media screen and (min-width: 480px){
-    width: 528px;}
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--backdrop);
+  transition: opacity 500ms, visibility 500ms; 
+}
+.modal {
+  width: 90vw;
+  min-height: 581px;
+  background-color: var(--heder-color);
+  border-radius: 4px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 600ms;
+  padding: 40px;
+  @media screen and (min-width: 480px){
+    width: 450px;}
+  @media screen and (min-width: 480px){
+  width: 528px;}
 }
 
-  .backdrop.is-hidden .modal {
-    transform: scale(0.5);
+.backdrop.is-hidden .modal {
+  transform: scale(0.5);
+}
+.modal-close {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid var(--modal-close);
+  fill: var(--maim-color);
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover, &:focus{
+    fill: var(--alt-color);
   }
-  .modal-close {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    border: 1px solid var(--modal-close);
-    fill: var(--maim-color);
-    background-color: transparent;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: 8px;
-    right: 8px;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    &:hover, &:focus{
-      fill: var(--alt-color);
-    }
+}
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+.modal-title {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  color: var(--maim-color);
+  margin-bottom: 12px;
+}
+.form-field:not(:first-child) {
+  margin-top: 10px;
+  } 
+  .form-checkbox{
+    margin-top: 20px;
   }
-  .is-hidden {
-    opacity: 0;
-    pointer-events: none;
-    visibility: hidden;
+
+.input-form {
+  width: 100%;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid var(--input-color);
+  padding-left: 40px;
+  outline: none;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover, &:focus {border-color: var(--alt-color);
   }
-  .modal-title {
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 1.15;
-    text-align: center;
-    color: var(--maim-color);
-    margin-bottom: 12px;
+  &:focus + .input-icon, &:hover + .input-icon{
+    fill: var(--alt-color);
   }
-  .form-field:not(:first-child) {
-    margin-top: 10px;
-    } 
-    .form-checkbox{
-      margin-top: 20px;
-    }
-  
-  .input-form {
-    width: 100%;
-    height: 40px;
+}
+.input-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: var(--description-color);
+  display: flex;
+  margin-bottom: 4px;
+  text-align: center;
+}
+.form-text {
+  width: 100%;
+  height: 100px;
+  border-radius: 4px;
+  border: 1px solid var(--input-color);
+  padding: 12px 16px;
+  resize: none;
+  &::placeholder {
+    color: var(--placeholder-text);
+  }
+}
+.input-wrap {
+  position: relative;
+}
+.input-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  outline: none;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.check-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &:before{
+    content: "";
+    width: 16px;
+    height: 15px;
     border-radius: 4px;
-    border: 1px solid var(--input-color);
-    padding-left: 40px;
-    outline: none;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    &:hover, &:focus {border-color: var(--alt-color);
-    }
-    &:focus + .input-icon, &:hover + .input-icon{
-      fill: var(--alt-color);
-    }
-  }
-  .input-text {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 1.16;
-    letter-spacing: 0.01em;
-    color: var(--description-color);
-    display: flex;
-    margin-bottom: 4px;
-    text-align: center;
-  }
-  .form-text {
-    width: 100%;
-    height: 100px;
-    border-radius: 4px;
-    border: 1px solid var(--input-color);
-    padding: 12px 16px;
-    resize: none;
-    &::placeholder {
-      color: var(--placeholder-text);
-    }
-  }
-  .input-wrap {
-    position: relative;
-  }
-  .input-icon {
-    position: absolute;
-    left: 12px;
-    top: 50%;
-    transform: translateY(-50%);
-    outline: none;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .check-text {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    &:before{
-      content: "";
-      width: 16px;
-      height: 15px;
-      border-radius: 4px;
-      border: 2px solid  var(--maim-color); 
-      margin-right: 8px ;
-      cursor: pointer;
-      transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);}
-    .policy-check:focus + &::before,
-    .policy-check:hover + &::before  { 
-      border: 2px solid var(--alt-color);
-      }
-    }
-  .policy-check:checked + .check-text::before {
+    border: 2px solid  var(--maim-color); 
+    margin-right: 8px ;
+    cursor: pointer;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);}
+  .policy-check:focus + &::before,
+  .policy-check:hover + &::before  { 
     border: 2px solid var(--alt-color);
-    background-image: url(../img/icon-check.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    background-color: var(--alt-color);
+    }
   }
-  .modal-link{
-    color: var(--alt-color);
-    margin-left: 4px;
-  }
+.policy-check:checked + .check-text::before {
+  border: 2px solid var(--alt-color);
+  background-image: url(../img/icon-check.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-color: var(--alt-color);
+}
+.modal-link{
+  color: var(--alt-color);
+  margin-left: 4px;
+}
