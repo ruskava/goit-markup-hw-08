@@ -901,14 +901,16 @@ body {
   margin-bottom: 30px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .hero .hero-title {
     font-size: 26px;
     line-height: 1.61;
+    text-align: center;
+    max-width: 360px;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .hero .hero-title {
     font-size: 44px;
     line-height: 1.36;
@@ -1300,6 +1302,7 @@ body {
 .portfolio-iteam-wrap {
   position: relative;
   overflow: hidden;
+  flex-grow: 1;
 }
 
 .portfolio-cards__text {
@@ -1327,5 +1330,11 @@ body {
 .portfolio-cards__img:hover,
 .portfolio-cards__img:focus {
   box-shadow: var(--box-shadow-cards);
+}
+
+.portfolio-cards__img {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 /*# sourceMappingURL=main.css.map */
