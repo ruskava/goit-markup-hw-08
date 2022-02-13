@@ -41,11 +41,8 @@
     display: flex;
     flex-wrap: wrap;
   }
-  @media screen and (min-width: 1200px) {
-    display: flex;
-    align-items: baseline;
-  }
 }
+
 .wrap-item {
   @media screen and (max-width: 1199px) {
     text-align: center;
@@ -81,7 +78,7 @@
 }
 
 .footer .input-form {
-  max-width: 358px;
+  width: 358px;
   height: 50px;
   margin-right: 12px;
   background-color: transparent;
@@ -94,14 +91,14 @@
     border-color: var(--alt-color);
   }
   @media screen and (max-width: 1199px) {
-    max-width: 450px;
-    display: flex;
     margin-bottom: 20px;
+    display: flex;
   }
-  @media screen and (min-width: 1200px) {
-    margin-right: 12px;
+  @media screen and (max-width: 1199px) {
+    width: 450px;
   }
 }
+
 .icon-subscribe {
   fill: var(--background-team);
   position: absolute;

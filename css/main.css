@@ -384,6 +384,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  line-height: 1;
 }
 
 .check-text:before {
@@ -1152,13 +1153,6 @@ body {
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .wrap {
-    display: flex;
-    align-items: baseline;
-  }
-}
-
 @media screen and (max-width: 1199px) {
   .wrap-item {
     text-align: center;
@@ -1201,7 +1195,7 @@ body {
 }
 
 .footer .input-form {
-  max-width: 358px;
+  width: 358px;
   height: 50px;
   margin-right: 12px;
   background-color: transparent;
@@ -1217,15 +1211,14 @@ body {
 
 @media screen and (max-width: 1199px) {
   .footer .input-form {
-    max-width: 450px;
-    display: flex;
     margin-bottom: 20px;
+    display: flex;
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 1199px) {
   .footer .input-form {
-    margin-right: 12px;
+    width: 450px;
   }
 }
 
