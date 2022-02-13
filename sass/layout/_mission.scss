@@ -1,39 +1,41 @@
 .company {
   padding-bottom: 0px;
-  @media screen and (min-width: 320px) {
-    --card-item: 1;}
+  --card-item: 1;
   @media screen and (min-width: 768px) {
-    --card-item: 2;}
+    --card-item: 2;
+  }
   @media screen and (min-width: 1200px) {
-    --card-item: 4;}
+    --card-item: 4;
   }
- .company-list__title {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.71;
-    @media screen and (min-width: 1200px){
+}
+.company-list__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.71;
+  @media screen and (min-width: 1200px) {
     line-height: 1.14;
-    }
-    text-transform: uppercase;
-    color: var(--maim-color);
-    margin-bottom: 10px;
-    @media screen and (max-width: 480px){
-    display: flex;
-    justify-content: center;
-    align-items: center;}
   }
-  .company-list__img {
-    height: 120px;
+  text-transform: uppercase;
+  color: var(--maim-color);
+  margin-bottom: 10px;
+  @media screen and (max-width: 480px) {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 30px;
-    background-color: var(--background-team);
   }
-  .company-list__icon {
-    display: flex;
-    justify-content: center;
-  }
-  .company-list__text{
-    margin-bottom: 30px;
-  }
+}
+.company-list__img {
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  background-color: var(--background-team);
+}
+.company-list__icon {
+  display: flex;
+  justify-content: center;
+}
+.company-list__text {
+  margin-bottom: 30px;
+}

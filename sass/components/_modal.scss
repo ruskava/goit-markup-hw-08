@@ -4,10 +4,11 @@
   width: 100vw;
   height: 100vh;
   background-color: var(--backdrop);
-  transition: opacity 500ms, visibility 500ms; 
+  transition: opacity 500ms, visibility 500ms;
 }
 .modal {
   width: 90vw;
+  max-width: 450px;
   min-height: 581px;
   background-color: var(--heder-color);
   border-radius: 4px;
@@ -17,10 +18,10 @@
   transform: translate(-50%, -50%) scale(1);
   transition: transform 600ms;
   padding: 40px;
-  @media screen and (min-width: 480px){
-    width: 450px;}
-  @media screen and (min-width: 480px){
-  width: 528px;}
+
+  @media screen and (min-width: 768px) {
+    max-width: 528px;
+  }
 }
 
 .backdrop.is-hidden .modal {
@@ -40,7 +41,8 @@
   top: 8px;
   right: 8px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover, &:focus{
+  &:hover,
+  &:focus {
     fill: var(--alt-color);
   }
 }
@@ -59,10 +61,10 @@
 }
 .form-field:not(:first-child) {
   margin-top: 10px;
-  } 
-  .form-checkbox{
-    margin-top: 20px;
-  }
+}
+.form-checkbox {
+  margin-top: 20px;
+}
 
 .input-form {
   width: 100%;
@@ -72,9 +74,12 @@
   padding-left: 40px;
   outline: none;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover, &:focus {border-color: var(--alt-color);
+  &:hover,
+  &:focus {
+    border-color: var(--alt-color);
   }
-  &:focus + .input-icon, &:hover + .input-icon{
+  &:focus + .input-icon,
+  &:hover + .input-icon {
     fill: var(--alt-color);
   }
 }
@@ -115,20 +120,22 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  &:before{
+  &:before {
     content: "";
     width: 16px;
     height: 15px;
     border-radius: 4px;
-    border: 2px solid  var(--maim-color); 
-    margin-right: 8px ;
+    border: 2px solid var(--maim-color);
+    margin-right: 8px;
     cursor: pointer;
-    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);}
-  .policy-check:focus + &::before,
-  .policy-check:hover + &::before  { 
-    border: 2px solid var(--alt-color);
-    }
+    flex-shrink: 0;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
+  .policy-check:focus + &::before,
+  .policy-check:hover + &::before {
+    border: 2px solid var(--alt-color);
+  }
+}
 .policy-check:checked + .check-text::before {
   border: 2px solid var(--alt-color);
   background-image: url(../img/icon-check.svg);
@@ -137,7 +144,7 @@
   background-size: contain;
   background-color: var(--alt-color);
 }
-.modal-link{
+.modal-link {
   color: var(--alt-color);
   margin-left: 4px;
 }

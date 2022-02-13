@@ -1,7 +1,5 @@
 .portfolio {
-  @media screen and (min-width: 320px) {
-    --card-item: 1;
-  }
+  --card-item: 1;
   @media screen and (min-width: 768px) {
     --card-item: 2;
   }
@@ -31,11 +29,11 @@
 .border {
   border: 1px solid var(--border-color);
   padding: 20px 24px;
+  flex-grow: 1;
 }
 .portfolio-iteam-wrap {
   position: relative;
   overflow: hidden;
-  flex-grow: 1;
 }
 .portfolio-cards__text {
   font-family: "Roboto";

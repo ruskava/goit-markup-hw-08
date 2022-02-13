@@ -1,61 +1,55 @@
-.card-set{
-  @media screen and (min-width: 320px){
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+.card-set-item {
+  width: calc(100% / var(--card-item) - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
+}
+.card-set {
+  @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
     margin-left: -30px;
     margin-top: -30px;
   }
-  }
-  .card-set-item{
-    @media screen and (min-width: 320px) {
+}
+.card-set-item {
+  @media screen and (min-width: 768px) {
     width: calc(100% / var(--card-item) - 30px);
     margin-left: 30px;
     margin-top: 30px;
-    }
   }
-.card-set{
-  @media screen and (min-width: 768px){
+}
+card-set {
+  @media screen and (min-width: 1200px) {
     display: flex;
     flex-wrap: wrap;
     margin-left: -30px;
     margin-top: -30px;
   }
-  }
-  .card-set-item{
-    @media screen and (min-width: 768px) {
+}
+.card-set-item {
+  @media screen and (min-width: 1200px) {
     width: calc(100% / var(--card-item) - 30px);
     margin-left: 30px;
     margin-top: 30px;
-    }
   }
-  card-set{
-    @media screen and (min-width: 1200px){
-      display: flex;
-      flex-wrap: wrap;
-      margin-left: -30px;
-      margin-top: -30px;
-    }
-    }
-    .card-set-item{
-      @media screen and (min-width: 1200px) {
-      width: calc(100% / var(--card-item) - 30px);
-      margin-left: 30px;
-      margin-top: 30px;
-      }
-    }
+}
 
-    .card-set-btn{
-      @media screen and (min-width: 320px){
-        display: flex;
-        flex-wrap: wrap;
-        margin-left: -15px;
-        margin-top: -15px;
-      }
-      }
-      .card-set-ite-btn{
-        @media screen and (min-width: 1200px) {
-        width: calc(100% / var(--card-item) - 8px);
-        margin-left: -15px;
-        margin-top: -15px;
-        }
-      }
+.card-set-btn {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-top: -15px;
+}
+.card-set-ite-btn {
+  @media screen and (min-width: 1200px) {
+    width: calc(100% / var(--card-item) - 8px);
+    margin-left: -15px;
+    margin-top: -15px;
+  }
+}

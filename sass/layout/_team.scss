@@ -1,11 +1,12 @@
 .team {
   background: var(--background-team);
-  @media screen and (min-width: 320px) {
-    --card-item: 1;}
+  --card-item: 1;
   @media screen and (min-width: 768px) {
-    --card-item: 2;}
+    --card-item: 2;
+  }
   @media screen and (min-width: 1200px) {
-    --card-item: 4;}
+    --card-item: 4;
+  }
 }
 .team__title,
 .team__position {
@@ -17,7 +18,7 @@
   color: var(--maim-color);
   margin-bottom: 10px;
 }
-.team-list__photo{
+.team-list__photo {
   margin-bottom: 30px;
   text-align: center;
 }
