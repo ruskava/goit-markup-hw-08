@@ -349,9 +349,9 @@ body {
   line-height: 1.16;
   letter-spacing: 0.01em;
   color: var(--description-color);
-  display: flex;
-  margin-bottom: 4px;
   text-align: center;
+  display: flex;
+  margin-top: 10px;
 }
 
 .form-text {
